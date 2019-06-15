@@ -4,6 +4,7 @@ class Song
   @@artists = []
   @@genres = []
   @@genre_count = {}
+  @@artist_count = {}
   
   attr_accessor :name, :artist, :genre 
   
@@ -29,6 +30,20 @@ class Song
   end 
   
   def self.genre_count 
+    
+    #initialize each genre with 0 
+    @@genres.each do |genre|
+      @@genre_count[genre] = 0
+    end 
+    
+    #change each genre value to have the number of songs in that genre
+    @@genres.each do |genre|
+      @@genre_count[genre] +=1 
+    end 
+    @@genre_count
+  end 
+  
+  def self.artist_count 
     
     #initialize each genre with 0 
     @@genres.each do |genre|

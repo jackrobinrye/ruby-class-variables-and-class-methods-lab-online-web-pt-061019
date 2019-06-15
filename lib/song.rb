@@ -32,12 +32,12 @@ class Song
     
     #initialize each genre with 0 
     @@genres.each do |genre|
-      @@genres[genre] = 0
+      @@genre_count[genre] = 0
     end 
     
     #change each genre value to have the number of songs in that genre
     @@genres.each do |genre|
-      @@genres[genre] +=1 
+      @@genre_count[genre] +=1 
     end 
     
   end 

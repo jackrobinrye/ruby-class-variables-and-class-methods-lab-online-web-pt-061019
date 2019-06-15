@@ -45,16 +45,16 @@ class Song
   
   def self.artist_count 
     
-    #initialize each genre with 0 
-    @@genres.each do |genre|
-      @@genre_count[genre] = 0
+    #initialize each artist key with 0 
+    @@artists.each do |artist|
+      @@artist_count[artist] = 0
     end 
     
-    #change each genre value to have the number of songs in that genre
-    @@genres.each do |genre|
-      @@genre_count[genre] +=1 
+    #change each artist value to have the number of songs in that genre
+    @@artists.each do |artist|
+      @@artist_count[artist] +=1 
     end 
-    @@genre_count
+    @@artist_count
   end 
   
 end 

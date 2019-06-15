@@ -30,10 +30,12 @@ class Song
   
   def self.genre_count 
     
+    #initialize each genre with 0 
     @@genres.each do |genre|
       @@genres[genre] = 0
     end 
     
+    #change each genre value to have the number of songs in that genre
     @@genres.each do |genre|
       @@genres[genre] +=1 
     end 

@@ -1,6 +1,6 @@
 class Song 
   
-  @@songs = 0 
+  @@count = 0 
   @@artists = []
   @@genres = []
   
@@ -10,7 +10,7 @@ class Song
     @name = name
     @artist = artist
     @genre = genre
-    @@songs += 1 
+    @@count += 1 
     @@artists << artist
     @@artists.uniq!
     @@genres << genre 
